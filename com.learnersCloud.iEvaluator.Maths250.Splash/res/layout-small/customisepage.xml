@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LLCustomise"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <SeekBar
+        android:id="@+id/seekBarQuestions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:contentDescription="@string/HowManyQuestion" >
+
+    </SeekBar>
+
+    <TextView
+        android:id="@+id/TextViewNumberOfQuestions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekBarQuestions"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:text=""
+        android:textSize="12dp"
+        android:textColor="@color/black" >
+
+    </TextView>
+
+    <TableLayout
+        android:id="@+id/TableCustomise"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextViewNumberOfQuestions"
+        android:layout_margin="10dp"
+        android:shrinkColumns="0"
+        android:stretchColumns="1" >
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/lblDifficulty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:ellipsize="none"
+                android:singleLine="true"
+                android:text="Difficulty"
+                android:textColor="@color/black"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/txtDifficulty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="right"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="12dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/lblTopic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:ellipsize="none"
+                android:singleLine="true"
+                android:text="Topic"
+                android:textColor="@color/black"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/txtTopic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="right"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="12dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/lblTypeofQuestion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:ellipsize="none"
+                android:singleLine="true"
+                android:text="Type of question"
+                android:textColor="@color/black"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/txtTypeofQuestion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="right"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="12dp" />
+        </TableRow>
+    </TableLayout>
+    
+    <Button
+        android:id="@+id/btnCustomise"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+       android:layout_below="@+id/TableCustomise"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Customise" />
+
+    <Button
+        android:id="@+id/btnStartTest"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/btnCustomise"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:gravity="center"
+         android:text="Start Test" />
+       <!-- android:background="@drawable/start_test" /> -->
+
+    <TextView
+        android:id="@+id/textViewFinalAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnStartTest"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible" />
+
+</RelativeLayout>

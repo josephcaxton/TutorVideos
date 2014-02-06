@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.learnersCloud.iEvaluator.Maths250"
+    android:versionCode="5"
+    android:versionName="5.0" >
+	 <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="8"/>	 
+<supports-screens
+        android:smallScreens="false"
+        android:normalScreens="true"
+        android:largeScreens="true"/>
+	 
+<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+     <application android:icon="@drawable/icon" android:label="@string/app_name"  android:name="com.learnersCloud.iEvaluator.Maths250.LocalCache">
+        <activity android:name=".Splash"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+         <activity android:name=".Main"
+                  android:label="@string/app_name" android:exported="false">
+            <intent-filter>
+                <action android:name="com.learnersCloud.iEvaluator.Maths250.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".MultipleChoiceSingleAnswer"
+                  android:label="@string/app_name" android:exported="false">
+            <intent-filter>
+                <action android:name="com.learnersCloud.iEvaluator.Maths250.MULTIPLECHOICESINGLEANSWER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MultipleChoiceMultipleAnswer"
+                  android:label="@string/app_name" android:exported="false">
+            <intent-filter>
+                <action android:name="com.learnersCloud.iEvaluator.Maths250.MULTIPLECHOICEMULTIPLEANSWER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".DescriptiveTypeQuestion"
+                  android:label="@string/app_name" android:exported="false">
+            <intent-filter>
+                <action android:name="com.learnersCloud.iEvaluator.Maths250.DESCRIPTIVETYPEQUESTION" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".FillTheBlanks"
+                  android:label="@string/app_name" android:exported="false" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="com.learnersCloud.iEvaluator.Maths250.FILLTHEBLANKS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".YesNo"
+                  android:label="@string/app_name" android:exported="false">
+            <intent-filter>
+                <action android:name="com.learnersCloud.iEvaluator.Maths250.YESNO" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".TrueFalse"
+                  android:label="@string/app_name" android:exported="false">
+            <intent-filter>
+                <action android:name="com.learnersCloud.iEvaluator.Maths250.TRUEFALSE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Result"
+                  android:label="@string/app_name" android:exported="false">
+            <intent-filter>
+                <action android:name="com.learnersCloud.iEvaluator.Maths250.RESULT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".Help"
+                  android:label="@string/app_name" android:exported="false">
+            <intent-filter>
+                <action android:name="com.learnersCloud.iEvaluator.Maths250.HELP" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Aboutus"
+                  android:label="@string/app_name" android:exported="false">
+            <intent-filter>
+                <action android:name="com.learnersCloud.iEvaluator.Maths250.ABOUTUS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Video"
+                  android:label="@string/app_name" android:exported="false">
+            <intent-filter>
+                <action android:name="com.learnersCloud.iEvaluator.Maths250.VIDEO" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".VideoPlayer"
+                  
+                  android:screenOrientation="landscape"
+                  android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:exported="false">
+            <intent-filter>
+                <action android:name="com.learnersCloud.iEvaluator.Maths250.VIDEOPLAYER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         <activity android:name=".Customise"
+                  android:label="@string/app_name" android:exported="false">
+            <intent-filter>
+                <action android:name="com.learnersCloud.iEvaluator.Maths250.CUSTOMISE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Questions"
+                  android:label="@string/app_name" android:exported="false">
+            <intent-filter>
+                <action android:name="com.learnersCloud.iEvaluator.Maths250.QUESTIONS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Configure"
+                  android:label="@string/app_name" android:exported="false">
+            <intent-filter>
+                <action android:name="com.learnersCloud.iEvaluator.Maths250.CONFIGURE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".TabGroup5"
+                  android:label="@string/app_name" android:exported="false">
+            <intent-filter>
+                <action android:name="com.learnersCloud.iEvaluator.Maths250.TABGROUP5" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".TabGroup1"
+                  android:label="@string/app_name" android:exported="false">
+            <intent-filter>
+                <action android:name="com.learnersCloud.iEvaluator.Maths250.TABGROUP1" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".TabGroup2"
+                  android:label="@string/app_name" android:exported="false">
+            <intent-filter>
+                <action android:name="com.learnersCloud.iEvaluator.Maths250.TABGROUP2" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         
+ <activity android:name="com.learnersCloud.iEvaluator.Maths250.Tabs"
+                  android:label="@string/app_name" android:exported="false">
+            <intent-filter>
+                <action android:name="com.learnersCloud.iEvaluator.Maths250.TABS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+    
+    
+</manifest>

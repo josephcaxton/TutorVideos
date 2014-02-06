@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent" android:background="@drawable/background"
+  android:layout_height="fill_parent"  android:id="@+id/LLMultipleMultiple" >
+  
+    <WebView android:id="@+id/MQuestionHeaderBox" android:layout_width="fill_parent" android:layout_height="160dp" 
+   			android:gravity="center" android:layout_weight="1" android:layout_alignParentTop="true">
+  
+  	</WebView>
+  
+    <ScrollView android:id="@+id/scrollMultipleMultiplePg" 
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content" android:layout_below="@+id/MQuestionHeaderBox">
+     
+     <RelativeLayout
+            android:id="@+id/relativelayoutMultipleMultiple2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+  
+    		<TableLayout android:id="@+id/MQtable"  android:layout_width="fill_parent" 
+    			android:layout_height="wrap_content" android:gravity="center"  android:layout_weight="1" >
+   
+    		</TableLayout>
+  
+ 
+		
+			
+    		<Button  android:layout_width="wrap_content" android:layout_height="wrap_content" 
+    			android:id="@+id/MContinue" android:text="Continue" android:layout_marginRight="10dp" 
+    			android:layout_weight="1"  android:layout_alignParentRight="true" android:layout_below="@+id/MQtable"></Button>
+    		
+    		<Button android:layout_width="wrap_content" android:layout_height="wrap_content"  
+    android:id="@+id/MultipleChoiceMultipleShowReason" android:text="Reason" android:layout_marginLeft="10dp" 
+    android:layout_weight="1"   android:layout_alignParentLeft="true" android:layout_below="@+id/MQtable">
+    </Button>
+	
+  </RelativeLayout>
+		
+	 </ScrollView>
+	
+</RelativeLayout>

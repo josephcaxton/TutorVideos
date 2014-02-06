@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@drawable/background"
+	android:orientation="vertical" >
+	
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtAboutusSitelink"
+        android:layout_toRightOf="@+id/txtAboutusSitelink" >
+    
+         <RelativeLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+	
+    <TextView android:text="" android:id="@+id/txtAboutus" android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" android:layout_marginTop="50dp" android:layout_marginLeft="25dp" android:layout_marginRight="25dp"></TextView>
+    
+    <TextView android:text="" android:id="@+id/txtAboutusSitelink" android:layout_width="wrap_content" 
+        android:layout_below="@+id/txtAboutus" android:layout_height="wrap_content" android:layout_margin="25dp"></TextView>
+
+    
+       
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

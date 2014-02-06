@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical" android:background="@drawable/background"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+    <TextView android:text="Internet connection is required to view results !" android:id="@+id/txtResult" android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"></TextView>
+
+    <WebView
+        android:id="@+id/webViewResults"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:layout_below="@+id/txtResult"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp" android:layout_margin="10dp" 
+        />
+    
+    <ProgressBar
+       android:id="@+id/ResultsprogressBar"
+       style="?android:attr/progressBarStyleLarge"
+       android:layout_width="60dp"
+       android:layout_height="60dp" android:indeterminate="true" android:gravity="center"
+       android:layout_below="@+id/SpImage" android:layout_centerInParent="true"/>
+    
+    <Button android:layout_width="wrap_content" android:layout_height="40dp"  
+    android:id="@+id/ResultRefresh" android:text="Refresh" android:layout_marginRight="10dp" 
+     android:layout_alignParentBottom="true" android:layout_alignParentRight="true"
+    
+    >
+    </Button>
+    
+</RelativeLayout>

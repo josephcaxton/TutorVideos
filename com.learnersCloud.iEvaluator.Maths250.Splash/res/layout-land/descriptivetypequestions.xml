@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LLDescriptiveType"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <WebView
+        android:id="@+id/DQuestionHeaderBox"
+        android:layout_width="250dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:gravity="center" >
+    </WebView>
+
+    <TextView
+        android:id="@+id/DtxtAnswer"
+        android:layout_width="250dp"
+        android:layout_height="160dp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:background="@color/white"
+        android:inputType="textMultiLine"
+        android:padding="10dp"
+        android:textColor="@color/black" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txtDonotCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/DtxtAnswer"
+        android:layout_below="@id/DtxtAnswer"
+        android:layout_marginBottom="2dp"
+        android:text="*Do not count in overall marks"
+        android:textSize="15px" />
+
+    <Button
+        android:id="@+id/DBtnContinue"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_alignRight="@+id/DtxtAnswer"
+        android:layout_below="@+id/txtDonotCount"
+        android:text="Continue" />
+
+    <Button
+        android:id="@+id/DbtnShowAnswer"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/txtDonotCount"
+        android:layout_alignTop="@+id/DBtnContinue"
+        android:text="Show Answer" />
+
+</RelativeLayout>

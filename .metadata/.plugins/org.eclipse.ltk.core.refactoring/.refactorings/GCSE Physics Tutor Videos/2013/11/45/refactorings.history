@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;tv_physics_header.png&apos; to &apos;drawable-hdpi&apos;&#x0A;- Original project: &apos;GCSE Physics Tutor Videos&apos;&#x0A;- Destination element: &apos;drawable-hdpi&apos;&#x0A;- Original element: &apos;tv_physics_header.png&apos;" description="Copy file" element1="res/drawable-hdpi/tv_physics_header.png" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1383817036053" target="/GCSE Maths Tutor Videos/res/drawable-hdpi" units="0" version="1.0"/>
+</session>

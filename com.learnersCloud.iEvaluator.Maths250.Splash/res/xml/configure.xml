@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+     >
+    
+    <ListPreference android:title="Difficulty"
+           android:summary="Select level of difficulty here"
+           android:key="difficultyPref"
+           android:defaultValue="1"
+           android:entries="@array/difficulty_Name"
+           android:entryValues="@array/difficulty_values" 
+            /> 
+            
+     <ListPreference android:title="Topic"
+           android:summary="Select Topic from here"
+           android:key="topicPref"
+           android:defaultValue="0"
+           android:entries="@array/topic_Name"
+           android:entryValues="@array/topic_values" 
+            /> 
+            
+            <ListPreference android:title="Type of Question"
+           android:summary="Select type of question from here"
+           android:key="typeofquestionPref"
+           android:defaultValue="0"
+           android:entries="@array/typeofquestion_Name"
+           android:entryValues="@array/typeofquestion_values" 
+            /> 
+            
+</PreferenceScreen>

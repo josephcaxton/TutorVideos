@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent" android:background="@drawable/background"
+  android:layout_height="match_parent"
+  android:id="@+id/LLTrueFalse">
+  
+  
+  <WebView android:id="@+id/TQuestionHeaderBox" android:layout_width="match_parent" android:layout_height="460dp" 
+    android:gravity="center" android:layout_weight="1" android:layout_alignParentTop="true">
+    </WebView>
+    
+       <ScrollView android:id="@+id/scrollTrueFalsePg" 
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content" android:layout_below="@+id/TQuestionHeaderBox">
+     
+     <RelativeLayout
+            android:id="@+id/relativelayoutTrueFalse2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            
+    <RadioGroup android:id="@+id/TradioGroup1" android:layout_height="wrap_content" 
+    android:layout_below="@+id/TQuestionHeaderBox"  android:layout_marginTop="44dp" 
+    android:layout_centerHorizontal="true" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_marginRight="33dp" android:padding="2dp">
+    
+        <RadioButton android:id="@+id/TTrue" android:text="True" android:layout_height="wrap_content" android:checked="false"  
+        android:layout_width="wrap_content" ></RadioButton>
+        <ImageView android:id="@+id/TImage1"  android:layout_width="wrap_content" android:layout_height="wrap_content" 
+     android:layout_alignLeft="@+id/TTrue"  ></ImageView>
+        
+        <RadioButton android:id="@+id/TFalse" android:layout_width="wrap_content" android:text="False" android:checked="false"  android:layout_height="wrap_content" 
+        android:layout_marginLeft="120dp"></RadioButton>
+        <ImageView android:id="@+id/TImage2"  android:layout_width="wrap_content" android:layout_height="wrap_content" 
+     android:layout_alignLeft="@+id/TFalse"  ></ImageView>
+      
+    </RadioGroup>
+    
+    
+    <Button android:layout_width="220dp" android:layout_height="80dp"  
+    android:id="@+id/TContinue" android:text="Continue" android:layout_marginRight="10dp" android:layout_marginTop="44dp"
+    android:layout_weight="1"  android:layout_alignParentBottom="true" android:layout_alignParentRight="true" android:layout_below="@+id/TradioGroup1">
+    </Button>
+    
+    <Button android:layout_width="220dp" android:layout_height="80dp"  
+    android:id="@+id/TrueFalseShowReason" android:text="Reason" android:layout_marginLeft="10dp" android:layout_marginTop="44dp"
+    android:layout_weight="1"  android:layout_alignParentBottom="true" android:layout_alignParentLeft="true" android:layout_below="@+id/TradioGroup1">
+    </Button>
+    
+        </RelativeLayout>
+		
+	 </ScrollView>
+        
+</RelativeLayout>

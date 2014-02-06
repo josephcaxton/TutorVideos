@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LLTrueFalse"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <WebView
+        android:id="@+id/TQuestionHeaderBox"
+        android:layout_width="650dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp" >
+    </WebView>
+
+    <RadioGroup
+        android:id="@+id/TradioGroup1"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="100dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/TTrue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="True" >
+        </RadioButton>
+
+        <ImageView
+            android:id="@+id/TImage1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TTrue" >
+        </ImageView>
+
+        <RadioButton
+            android:id="@+id/TFalse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:checked="false"
+            android:text="False" >
+        </RadioButton>
+
+        <ImageView
+            android:id="@+id/TImage2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TFalse" >
+        </ImageView>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/TrueFalseShowReason"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TradioGroup1"
+       android:layout_below="@+id/TradioGroup1" 
+        android:layout_marginTop="31dp"
+        android:text="Reason" />
+
+    <Button
+        android:id="@+id/TContinue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/TrueFalseShowReason"
+         android:layout_below="@+id/TradioGroup1" 
+        android:layout_marginRight="22dp"
+        android:text="Continue" />
+
+</RelativeLayout>

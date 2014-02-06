@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LLVideoPage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <Gallery
+        android:id="@+id/VideoGallery"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <!--
+         <FrameLayout android:id="@+id/frame"
+	    android:layout_height="wrap_content"
+	    android:layout_width="match_parent">
+    -->
+
+    <VideoView
+        android:id="@+id/videoView2"
+        android:layout_width="550dp"
+        android:layout_height="550dp"
+        android:layout_below="@+id/VideoGallery"
+        android:layout_margin="20dp"
+        android:background="@drawable/start_up_logo"
+        android:gravity="center" />
+
+    <ProgressBar
+        android:id="@+id/VideoprogressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:indeterminate="true" />
+    <!-- </FrameLayout> -->
+
+    <TextView
+        android:id="@+id/txtVideoBottomText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/VideoprogressBar"
+        android:layout_alignTop="@+id/videoView2"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/txtVideoAd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtVideoBottomText"
+        android:layout_below="@+id/txtVideoBottomText"
+        android:layout_marginTop="23dp"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/btnLearnersCloud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtVideoAd"
+        android:layout_below="@+id/txtVideoAd"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/web_promo_btn" />
+
+</RelativeLayout>

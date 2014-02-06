@@ -1,0 +1,34 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LLMainPage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/hero"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:contentDescription="@string/image"
+        android:src="@drawable/hero" />
+
+    <ImageView
+        android:id="@+id/eqphysics_header"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/hero"
+        android:layout_margin="10dp"
+        android:contentDescription="@string/image"
+        android:src="@drawable/eq_maths_header" />
+
+    <Button
+        android:id="@+id/btnStartPractice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/hero"
+        android:layout_alignRight="@+id/eqphysics_header"
+        android:background="@drawable/start_practice_questions" />
+
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LLYesNo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <WebView
+        android:id="@+id/YQuestionHeaderBox"
+        android:layout_width="600dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp" >
+    </WebView>
+
+    <RadioGroup
+        android:id="@+id/YradioGroup1"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="100dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/YYes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Yes" >
+        </RadioButton>
+
+        <ImageView
+            android:id="@+id/YImage1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/YYes" >
+        </ImageView>
+
+        <RadioButton
+            android:id="@+id/YNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:checked="false"
+            android:text="NO" >
+        </RadioButton>
+
+        <ImageView
+            android:id="@+id/YImage2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/YNo" >
+        </ImageView>
+    </RadioGroup>
+    <Button
+        android:id="@+id/YContinue"
+       android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_marginTop="31dp"
+         android:layout_marginRight="22dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/YradioGroup1"
+       
+        android:text="Continue" />
+
+    <Button
+        android:id="@+id/YesNoShowReason"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/YContinue"
+        android:layout_toLeftOf="@+id/YradioGroup1"
+        android:text="Reason" />
+
+</RelativeLayout>

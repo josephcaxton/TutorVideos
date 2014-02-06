@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="match_parent"
+	android:layout_height="match_parent"  android:background="@drawable/background" android:id="@+id/LLMainPage">
+
+ <Button
+	    android:id="@+id/btnStartPractice"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/hero"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="23dp"
+	    android:background="@drawable/start_practice_questions" />
+
+	<ImageView
+	    android:id="@+id/hero"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_centerVertical="true"
+	    android:contentDescription="@string/image"
+	    android:src="@drawable/hero" />
+
+	<ImageView
+	    android:id="@+id/english_header"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/hero"
+	    android:layout_alignParentLeft="true"
+	    android:contentDescription="@string/image"
+	    android:src="@drawable/eq_maths_header" />
+	
+		
+	
+
+
+
+
+
+
+</RelativeLayout>

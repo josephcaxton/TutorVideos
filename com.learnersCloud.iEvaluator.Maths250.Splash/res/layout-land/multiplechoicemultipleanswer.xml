@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent" android:background="@drawable/background"
+  android:layout_height="fill_parent"  android:id="@+id/LLMultipleMultiple" >
+  
+    <WebView android:id="@+id/MQuestionHeaderBox" 
+        android:layout_width="250dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+   		>
+  
+  	</WebView>
+  
+    		<TableLayout android:id="@+id/MQtable"   android:layout_width="250dp"
+    			android:layout_height="wrap_content" android:layout_alignParentRight="true"
+    			android:layout_weight="1" android:layout_margin="10dp" >
+   
+    		</TableLayout>
+  
+ 
+		
+			
+    		<Button  android:layout_width="wrap_content" android:layout_height="wrap_content" 
+    			android:id="@+id/MContinue" android:text="Continue" android:layout_marginRight="10dp" 
+    			android:layout_weight="1"  android:layout_alignParentRight="true" android:layout_below="@+id/MQtable"></Button>
+
+    		<Button
+    		    android:id="@+id/MultipleChoiceMultipleShowReason"
+    		    android:layout_width="wrap_content"
+    		    android:layout_height="wrap_content"
+    		    android:layout_alignTop="@+id/MContinue"
+    		    android:layout_marginRight="32dp"
+    		    android:layout_toLeftOf="@+id/MContinue"
+    		    android:layout_weight="1"
+    		    android:text="Reason" />
+	
+</RelativeLayout>

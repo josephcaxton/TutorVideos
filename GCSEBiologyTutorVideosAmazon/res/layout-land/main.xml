@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LLMainPage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/hero"
+        android:layout_width="220dp"
+        android:layout_height="120dp"
+        android:layout_margin="10dp"
+        android:contentDescription="@string/image"
+        android:src="@drawable/hero" />
+
+    <ImageView
+        android:id="@+id/eqmaths_header"
+        android:layout_width="220dp"
+        android:layout_height="120dp"
+         android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+       
+        android:contentDescription="@string/image"
+        android:src="@drawable/tv_biology_header" />
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hero"
+        android:layout_margin="10dp"
+        android:background="@drawable/free_and_paid_videos" />
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/cell_background"
+   
+    android:padding="5dp" >
+ 
+    <ImageView
+        android:id="@+id/listlogo"
+        android:layout_width="@dimen/seventydp"
+        android:layout_height="@dimen/seventydp"
+        android:layout_marginLeft="@dimen/fivedp"
+        android:layout_marginRight="@dimen/twentydp"
+        android:layout_marginTop="@dimen/fivedp"
+        android:src="@drawable/icon" 
+         android:contentDescription="@string/image">
+
+    </ImageView>
+ 
+    <TextView
+        android:id="@+id/listlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/listlogo"
+        android:ellipsize="end"
+        android:textSize="@dimen/fifteendp" >
+
+    </TextView>
+   
+   <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+       android:layout_marginRight="@dimen/tendp"
+       android:background="@drawable/search"
+        android:visibility="invisible"
+        android:focusable="false" />
+
+    <ImageView
+        android:id="@+id/listButton"
+       android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/fivedp" 
+        android:layout_marginLeft="@dimen/fivedp"
+        android:layout_marginTop="@dimen/fortydp" android:contentDescription="@string/image">
+    </ImageView>
+    
+     
+ 
+ 
+</RelativeLayout>

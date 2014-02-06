@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;GCSE Maths Tutor Videos/res/drawable-mdpi/2_action_search.png&apos; to &apos;search.png&apos;" description="Rename resource &apos;2_action_search.png&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="res/drawable-mdpi/2_action_search.png" name="search.png" stamp="1363081604922" updateReferences="true"/>
+</session>

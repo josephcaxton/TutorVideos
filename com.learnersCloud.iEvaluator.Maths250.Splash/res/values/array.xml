@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="difficulty_Name">
+    <item>Foundation</item>
+    <item>Higher</item>
+    
+    </string-array>
+    
+    <string-array name="difficulty_values">
+     <item>1</item>
+    <item>3</item>
+    </string-array>
+    
+    <string-array name="topic_Name">
+    <item>All</item>
+    <item>3D co-ordinates</item>
+    <item>Algebra and Equations</item>
+    <item>Area and Perimeter</item>
+    <item>Averages</item>
+    <item>BIDMAS</item>
+    <item>Bounds</item>
+    <item>Circle Theorems</item>
+    <item>Circles</item>
+    <item>Decimals</item>
+    <item>Dimensions</item>
+    <item>Estimation</item>
+    <item>Formulae</item>
+    <item>Fractions</item>
+    <item>Functions</item>
+    <item>Further Graphs</item>
+    <item>Indices</item>
+    <item>Indices and surds</item>
+    <item>Inequalities</item>
+    <item>Measure</item>
+    <item>Money</item>
+    <item>Number</item>
+    <item>Number Patterns</item>
+    <item>Percentages</item>
+    <item>Probability</item>
+    <item>Pythagoras Theorem</item>
+    <item>Quadratics</item>
+    <item>Ratio and Proportion</item>
+    <item>Rounding</item>
+    <item>Shape and angles</item>
+    <item>Similarity and Congruence</item>
+    <item>Simultaneous Equations</item>
+    <item>Standard Form</item>
+    <item>Straight line graphs</item>
+    <item>Surface Area</item>
+    <item>Symmetry</item>
+    <item>Time</item>
+    <item>Transformations</item>
+    <item>Trial and Improvement</item>
+    <item>Trigonometry</item>
+    <item>Two-Way tables</item>
+    <item>Using a calculator</item>
+    <item>Vectors</item>
+    <item>Volume</item>
+   
+    
+  
+ </string-array>
+    
+    <string-array name="topic_values">
+    <item>0</item>
+     <item>1</item>
+    <item>2</item>
+    <item>3</item>
+    <item>4</item>
+    <item>5</item>
+    <item>6</item>
+    <item>7</item>
+    <item>8</item>
+    <item>9</item>
+    <item>10</item>
+    <item>11</item>
+    <item>12</item>
+    <item>13</item>
+    <item>14</item>
+    <item>15</item>
+    <item>16</item>
+    <item>17</item>
+    <item>18</item>
+    <item>19</item>
+    <item>20</item>
+    <item>21</item>
+    <item>22</item>
+    <item>23</item>
+    <item>24</item>
+    <item>25</item>
+    <item>26</item>
+    <item>27</item>
+    <item>28</item>
+    <item>29</item>
+    <item>30</item>
+    <item>31</item>
+    <item>32</item>
+    <item>33</item>
+    <item>34</item>
+    <item>35</item>
+    <item>36</item>
+    <item>37</item>
+    <item>38</item>
+    <item>39</item>
+    <item>40</item>
+    <item>41</item>
+    <item>42</item>
+    <item>43</item>
+   
+  	
+    </string-array>
+    
+    
+    <string-array name="typeofquestion_Name">
+    <item>All</item>
+    <item>Descriptive Type</item>
+    <item>Multiple Choice Single Answer</item>
+    <item>True or False</item>
+    <item>Yes or No</item>
+    <item>Fill the blanks</item>
+    
+    </string-array>
+    
+    <string-array name="typeofquestion_values">
+    <item>0</item>
+     <item>1</item>
+    <item>2</item>
+    <item>3</item>
+    <item>4</item>
+    <item>5</item>
+    
+    
+    </string-array>
+    
+   
+</resources>

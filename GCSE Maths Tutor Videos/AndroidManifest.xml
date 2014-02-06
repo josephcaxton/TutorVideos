@@ -1,0 +1,147 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.learnerscloud.gcsemaths.videos"
+    android:versionCode="8"
+    android:versionName="3.0" >
+     <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+<supports-screens
+        android:smallScreens="false"
+        android:normalScreens="true"
+        android:largeScreens="true"/>
+<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    
+   
+    <application android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"  android:name="com.learnerscloud.gcsemaths.videos.LocalCache" android:debuggable="true">
+         <activity android:name=".Splash"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Main"
+                  android:label="@string/app_name" android:exported="false">
+            <intent-filter>
+                <action android:name="com.learnerscloud.gcsemaths.videos.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity android:name=".Coverage"
+                  android:label="@string/app_name" android:exported="false">
+            <intent-filter>
+                <action android:name="com.learnerscloud.gcsemaths.videos.Coverage" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".CoverageBrowser"
+                  android:label="@string/app_name" android:exported="false">
+            <intent-filter>
+                <action android:name="com.learnerscloud.gcsemaths.videos.CoverageBrowser" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Buy"
+                  android:label="@string/app_name" android:exported="false">
+            <intent-filter>
+                <action android:name="com.learnerscloud.gcsemaths.videos.Buy" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Login"
+                  android:label="@string/app_name" android:exported="false">
+            <intent-filter>
+                <action android:name="com.learnerscloud.gcsemaths.videos.Login" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity android:name=".Signup"
+                  android:label="@string/app_name" android:exported="false">
+            <intent-filter>
+                <action android:name="com.learnerscloud.gcsemaths.videos.Signup" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity android:name=".VideoPlayer"
+                  android:label="@string/app_name" android:exported="false" 
+                  android:configChanges="keyboardHidden|orientation"
+                   android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="com.learnerscloud.gcsemaths.videos.VideoPlayer" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity android:name=".VideoListActivity"
+                  android:label="@string/app_name" android:exported="false">
+            <intent-filter>
+                <action android:name="com.learnerscloud.gcsemaths.videos.VideoListActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         <activity android:name=".Help"
+                  android:label="@string/app_name" android:exported="false">
+            <intent-filter>
+                <action android:name="com.learnerscloud.gcsemaths.videos.HELP" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity android:name=".Share"
+                  android:label="@string/app_name" android:exported="false">
+            <intent-filter>
+                <action android:name="com.learnerscloud.gcsemaths.videos.SHARE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity android:name=".TabGroup1"
+                  android:label="@string/app_name" android:exported="false">
+            <intent-filter>
+                <action android:name="com.learnerscloud.gcsemaths.videos.TABGROUP1" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".TabGroup2"
+                  android:label="@string/app_name" android:exported="false">
+            <intent-filter>
+                <action android:name="com.learnerscloud.gcsemaths.videos.TABGROUP2" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".TabGroup3"
+                  android:label="@string/app_name" android:exported="false">
+            <intent-filter>
+                <action android:name="com.learnerscloud.gcsemaths.videos.TABGROUP3" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity android:name=".TabGroup4"
+                  android:label="@string/app_name" android:exported="false">
+            <intent-filter>
+                <action android:name="com.learnerscloud.gcsemaths.videos.TABGROUP4" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+ <activity android:name="com.learnerscloud.gcsemaths.videos.Tabs"
+                  android:label="@string/app_name" android:exported="false">
+            <intent-filter>
+                <action android:name="com.learnerscloud.gcsemaths.videos.TABS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name="io.vov.vitamio.activity.InitActivity"
+            
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+       
+    </application>
+
+</manifest>

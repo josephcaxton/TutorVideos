@@ -1,0 +1,17 @@
+<resources>
+
+    <string name="app_name">GCSE Chemistry Tutor Videos</string>
+    <string name="menu_settings">Settings</string>
+    <string name="loading">Loading....</string>
+    <color name="LearnersColor">#CCFFFF</color>
+    <string name="image">Image</string>
+    <color name="black">#000000</color>
+    <string name="subscribe">Subscribe</string>
+    <string name="EmailAddressHint">Email Address</string>
+    <string name="PasswordHint">Password</string>
+    <string name="login">Login</string>
+    <string name="cancel">Cancel</string>
+     <string name="signup">Sign up</string>
+      <string name="reportproblem">Report Problem</string>
+
+</resources>

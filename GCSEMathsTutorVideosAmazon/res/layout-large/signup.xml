@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" android:background="@drawable/background" >
+    
+ <TextView
+         android:id="@+id/txtsignupmessage"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_margin="@dimen/tendp"
+         android:gravity="center_horizontal"
+         android:textSize="@dimen/twelvedp" />
+
+    <EditText
+        android:id="@+id/txtsignupemailaddress"
+        android:layout_width="300dp"
+        android:layout_height="@dimen/fiftydp"
+        android:layout_below="@+id/txtsignupmessage" 
+        android:layout_centerInParent="true"
+       
+        android:hint="@string/EmailAddressHint" android:inputType="textEmailAddress" >
+         <requestFocus />
+        </EditText>
+    
+     <EditText
+         android:id="@+id/txtsignuppassword"
+         android:layout_width="300dp"
+         android:layout_height="@dimen/fiftydp"
+         android:layout_below="@+id/txtsignupemailaddress"
+         android:layout_margin="@dimen/tendp"
+         android:layout_centerInParent="true"
+         
+         android:hint="@string/PasswordHint" android:inputType="textPassword" />
+
+   
+
+    <Button
+        android:id="@+id/btnsignuplogin"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txtsignuppassword"
+        
+        android:layout_marginTop="@dimen/tendp"
+       
+        android:text="@string/signup" />
+    
+</RelativeLayout>

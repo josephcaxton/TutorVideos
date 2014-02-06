@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="app_name">GCSE Maths 250</string>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="LearnersColor">#CCFFFF</color>
+    <string name="sound">Sound</string>
+    <string name="showanswer">Show Answer</string>
+    <string name="Version">GCSE Maths 250 </string>
+    <string name="loading">Loading.....</string>
+     <string name="image">Image</string>
+     <string name="HowManyQuestion">How many questions do you want?</string>
+</resources>
